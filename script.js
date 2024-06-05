@@ -64,7 +64,7 @@ const calculateSum = () => {
         document.getElementById('sumResult').textContent = 'Please enter a valid number.';
     } else {
         const sum = sumOfDigits(sumNumberInput);
-        document.getElementById('sumResult').textContent = `The sum of digits of ${sumNumberInput} is ${sum}.`;
+        document.getElementById('sumResult').textContent = `The sum of digits of ${sumNumberInput} is <strong>${sum}</strong>.`;
     }
 }
 // Calculate the sum of digits in a number

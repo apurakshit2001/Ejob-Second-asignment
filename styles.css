@@ -87,6 +87,9 @@ input[type="text"],
 button {
     transition: all 0.3s ease;
 }
+p{
+    font-size: 20px;
+}
 
 
 @media (max-width: 768px) {
