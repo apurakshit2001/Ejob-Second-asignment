@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 25px;
+    padding-top: 5px;
+    
+}
+
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+header h1 span:nth-child(1) {
+    color: #4CAF50;
+}
+
+header h1 span:nth-child(2) {
+    color: #2196F3;
+}
+
+header h1 span:nth-child(3) {
+    color: #FFC107;
+}
+
+header h1 span:nth-child(4) {
+    color: #E91E63;
+}
+
+/* Advanced Selectors */
+.assignment {
+    margin-bottom: 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.assignment label {
+    font-weight: bold;
+    color: #333;
+}
+
+.assignment input[type="number"],
+.assignment input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.assignment button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.assignment button:hover {
+    background-color: #45a049;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+input[type="number"],
+input[type="text"],
+button {
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .assignment input[type="number"],
+    .assignment input[type="text"] {
+        width: 92%;
+    }
+
+    body {
+        background: rgb(231,231,231);
+        background: linear-gradient(90deg, rgba(231,231,231,1) 25%, rgba(170,170,170,1) 47%, rgba(233,233,233,1) 66%, rgba(255,255,255,1) 100%);
+    }
+
+}
