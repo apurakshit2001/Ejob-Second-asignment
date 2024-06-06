@@ -112,11 +112,13 @@ footer {
     padding: 10px 0;
     position: relative;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 footer p {
     margin: 0;
+    border-left: 5px solid #3498db;
+    border-right: 7px solid #3498db;
 }
 
 @media (max-width: 768px) {
