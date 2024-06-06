@@ -25,6 +25,7 @@
                 <input type="number" id="iVal2">
             </div>
             <button onclick="findPrimes()">Find Primes</button>
+            <button onclick="reset()">Reset</button>
             <p id="result"></p>
         </section>
         <section class="assignment">
@@ -34,6 +35,7 @@
                 <input type="number" id="numberInputDigitCount">
             </div>
             <button onclick="displayDigitCount()">Count Digits</button>
+            <button onclick="reset()">Reset</button>
             <p id="digitCountResult"></p>
         </section>
         <section class="assignment">
@@ -43,6 +45,7 @@
                 <input type="number" id="numberInputSum">
             </div>
             <button onclick="calculateSum()">Calculate Sum</button>
+            <button onclick="reset()">Reset</button>
             <p id="sumResult"></p>
         </section>
         <section class="assignment">
@@ -52,6 +55,7 @@
                 <input type="text" id="arrayInputMinMax">
             </div>
             <button onclick="findMinMax()">Find Min and Max</button>
+            <button onclick="reset()">Reset</button>
             <p id="minMaxResult"></p>
         </section>
         <section class="assignment">
@@ -61,12 +65,19 @@
                 <input type="text" id="arrayInputAverage">
             </div>
             <button onclick="calculateAverage()">Calculate Average</button>
+            <button class="avgreset" onclick="reset()">Reset</button>
             <p id="averageResult"></p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Yours faithfully Arpan</p>
     </footer>
+
+    <script>
+        function reset() {
+            window.location.reload();
+        }
+    </script>
 </body>
 
 </html>

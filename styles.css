@@ -242,5 +242,8 @@ footer p {
     p {
         font-size: 20px;
     }
+    .avgreset{
+        margin-top: 5px;
+    }
 
 }
