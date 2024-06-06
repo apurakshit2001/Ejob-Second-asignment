@@ -79,6 +79,10 @@ body {
 footer {
     margin-top: 40px;
     text-align: center;
+    background-color: #dddddd;
+    width: 100%;
+    padding: 3px 10px;
+    border-radius: 10px;
 }
 
 
@@ -104,7 +108,7 @@ p{
 
     body {
         background: rgb(231,231,231);
-        background: linear-gradient(90deg, rgba(231,231,231,1) 25%, rgba(170,170,170,1) 47%, rgba(233,233,233,1) 66%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(90deg, rgba(231,231,231,1) 25%, rgba(170, 170, 170, 0.486) 47%, rgba(233,233,233,1) 66%, rgba(255,255,255,1) 100%);
     }
 
 }
