@@ -1,102 +1,133 @@
-* {
+/* styles.css */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+input,
+label,
+button {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Set up basic body styles */
 body {
-    padding: 25px;
-    padding-top: 5px;
-    
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #6dd5fa, #ffffff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style the header */
+header {
+    background: #3498db;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    font-size: 2.5em;
 }
 
-header h1 span:nth-child(1) {
-    color: #4CAF50;
+header span {
+    color: #f1c40f;
 }
 
-header h1 span:nth-child(2) {
-    color: #2196F3;
-}
-
-header h1 span:nth-child(3) {
-    color: #FFC107;
-}
-
-header h1 span:nth-child(4) {
-    color: #E91E63;
-}
-
-/* Advanced Selectors */
-.assignment {
-    margin-bottom: 40px;
-    border: 2px solid #4CAF50;
-    border-radius: 10px;
+/* Main content area styles */
+main {
+    flex: 1;
     padding: 20px;
-    background-color: #f8f8f8;
 }
 
-.assignment label {
-    font-weight: bold;
-    color: #333;
+.assignment {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease;
 }
 
-.assignment input[type="number"],
-.assignment input[type="text"] {
-    width: 98%;
-    padding: 10px;
-    margin-top: 5px;
+.assignment:hover {
+    /* transform: translateY(-10px); */
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding-bottom: 5px;
 }
 
-.assignment button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.assignment button:hover {
-    background-color: #45a049;
+.input-group label {
+    flex: 1;
+    font-weight: bold;
 }
 
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #555;
+.input-group input {
+    flex: 2;
+    padding: 8px;
+    border: 2px solid #28552a;
+    border-radius: 4px;
 }
 
-footer {
-    margin-top: 40px;
-    text-align: center;
-    background-color: #dddddd;
-    width: 100%;
-    padding: 3px 10px;
-    border-radius: 10px;
-}
-
-
-input[type="number"],
-input[type="text"],
 button {
-    transition: all 0.3s ease;
-}
-p{
-    font-size: 20px;
+    background: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
 
+button:hover {
+    background: #2980b9;
+}
+
+p {
+    background: #ecf0f1;
+    border-left: 5px solid #3498db;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Footer styles */
+footer {
+    background: #3498db;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer p {
+    margin: 0;
+}
 
 @media (max-width: 768px) {
+    header {
+        background: none;
+        padding:0;
+        text-align: left;
+        border-bottom: 2px solid black;
+        margin: 0;
+        color: #5e5e5e;
+    }
     header h1 {
         font-size: 2rem;
     }
@@ -107,8 +138,109 @@ p{
     }
 
     body {
-        background: rgb(231,231,231);
-        background: linear-gradient(90deg, rgba(231,231,231,1) 25%, rgba(170, 170, 170, 0.486) 47%, rgba(233,233,233,1) 66%, rgba(255,255,255,1) 100%);
+        background: rgb(231, 231, 231);
+        background: linear-gradient(90deg, rgba(231, 231, 231, 1) 25%, rgba(170, 170, 170, 0.486) 47%, rgba(233, 233, 233, 1) 66%, rgba(255, 255, 255, 1) 100%);
+    }
+
+
+    /* adition */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 25px;
+        padding-top: 5px;
+
+    }
+
+    header h1 {
+        font-family: 'Arial', sans-serif;
+        /* font-size: 2.8rem; */
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    header h1 span:nth-child(1) {
+        color: #4CAF50;
+    }
+
+    header h1 span:nth-child(2) {
+        color: #2196F3;
+    }
+
+    header h1 span:nth-child(3) {
+        color: #FFC107;
+    }
+
+    header h1 span:nth-child(4) {
+        color: #E91E63;
+    }
+
+    /* Advanced Selectors */
+    .assignment {
+        margin-bottom: 40px;
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+
+    .assignment label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .assignment input[type="number"],
+    .assignment input[type="text"] {
+        /* width: 98%; */
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .assignment button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .assignment button:hover {
+        background-color: #45a049;
+    }
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #555;
+    }
+
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        background-color: #dddddd;
+        width: 100%;
+        padding: 3px 10px;
+        border-radius: 10px;
+    }
+
+
+    input[type="number"],
+    input[type="text"],
+    button {
+        transition: all 0.3s ease;
+    }
+
+    p {
+        font-size: 20px;
     }
 
 }
